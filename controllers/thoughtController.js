@@ -6,7 +6,6 @@ module.exports = {
       Thought.find()
       .then((users) => res.json(users))
       .catch((err) => res.status(500).json(err)); 
-        return res.json(studentObj);
     },
 		//get a single thought
     getSingleThought(req, res) {
