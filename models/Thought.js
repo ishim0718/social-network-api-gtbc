@@ -14,7 +14,7 @@ const thoughtSchema = new Schema(
     },
     username: { 
         type: Schema.Types.String, 
-        ref: 'User', 
+        rfe: 'user', 
         required: true 
     },
     reaction: [Reaction],
