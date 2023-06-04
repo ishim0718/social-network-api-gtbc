@@ -50,11 +50,11 @@ module.exports = {
 				.then((thought) =>
 				!thought
 					? res.status(404).json({ message: 'No thought with that ID' })
-					: res.status(thought)
+					: res.json(thought)
 			)
 				.catch((err) => {
 					console.log(err);
-					res.status(500).json(err)
+					res.status(500).json(err);
 			});
 		},
     // Delete a thought and remove them from the user
